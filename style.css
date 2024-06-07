@@ -1,86 +1,24 @@
-html, body {
-	background-color: black;
-	color: white;
-	font-family: helvetica, arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-	margin: 0;
-	padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body {
+	font-family: 'Nunito', sans-serif;
 }
 
-.container {
-	margin: 0 auto;
-	max-width: 768px;
-	padding: 20px 5%;
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 200px;
 }
 
-section {
-	background-color: #171717;
+button {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	width: clamp(100px, 100%, 200px);
 }
 
-h1, h2 {
-	line-height: 1;
-	text-transform: uppercase;
-}
-
-h2 {
-	margin-top: 40px;
-}
-
-h2:first-of-type {
-	margin-top: 20px;
-}
-
-.logo {
-	display: block;
-}
-
-img {
-	height: auto;
-	max-width: 100%;
-}
-
-.logo img {
-	width: 500px;
-}
-
-@media all and (max-width: 768px) {
-	.logo img {
-		width: 450px;
-	}
-}
-
-@media all and (max-width: 479px) {
-	.logo img {
-		width: 350px;
-	}
-}
-
-.icon.heart {
-	color: lightcoral;
-}
-
-a {
-	color: aquamarine;
-	font-weight: bold;
-}
-
-a:hover, a:active {
-	color: mediumaquamarine;
-}
-
-a code {
-	color: black;
-}
-
-code {
-	background-color: aquamarine;
-	color: black;
-	font-family: monospace;
-	padding: 1px;
-	user-select: all;
-}
-
-code.image {
-	background-color: lightyellow;
+button:hover, button:active {
+	background-color: #ccc;
 }
