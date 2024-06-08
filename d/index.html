@@ -36,16 +36,17 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="../style.css">
+	
 
 	<!-- Javscript -->
-	<script>
+	<!-- <script>
 		if ("serviceWorker" in navigator) {
 			window.addEventListener("load", () => {
 				navigator.serviceWorker && navigator.serviceWorker.register("../sw.js");
 			});
 		}
-	</script>
-	<script defer src="../main.js"></script>
+	</script> !-->  
+  <script defer src="../main.js"></script>
  </head>
 
  <body>
@@ -53,7 +54,11 @@
 		<h1>Plan lekcji - Dawid</h1>
 	</header>
 	<main>
-	<script src="../script.js"></script>
+		<script src="../script.js"></script>
+		<script >showTodayTimetable("d");</script>
+		<table border=1 frame=void rules=rows class="timetable" id="d">
+			
+		</table>
 	</main>
 
  </body>

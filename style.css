@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 body {
 	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	background-color: #000;
+	color: #e1e1e3;
+}
+
+header {
+	margin: 0;
+	padding: 0.5em;
+	position: sticky;
+	top: 0;
+	background-color: #111217;
+	color: #dcdde2;
+}
+
+h1 {
+	margin: 0;
 }
 
 main {
@@ -21,4 +37,37 @@ button {
 
 button:hover, button:active {
 	background-color: #ccc;
+}
+
+.timetable {
+	margin: 0;
+    min-width: 300px;
+	@media screen and (max-width: 768px) {
+		width: 100vw;
+	}
+}
+
+table td, table th {
+	margin: 0;
+	padding: 0.25em;
+}
+
+#lesson_slot {
+	font-size: 2em;
+}
+
+#hour {
+	color: #9c9c9e;
+}
+
+p {
+	display: inline;
+}
+
+#classroom {
+	color: #9c9c9e;
+}
+
+#teacher {
+	color: #9c9c9e;
 }
