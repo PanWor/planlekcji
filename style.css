@@ -121,6 +121,7 @@ table td:nth-child(3) {
 
 #hour {
 	color: #9c9c9e;
+	width: 2rem;
 }
 
 main p {
