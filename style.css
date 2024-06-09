@@ -5,12 +5,14 @@ body {
 	background-color: #000;
 	color: #e1e1e3;
 	overflow-x: hidden;
-	height: 100dvh;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
 }
 
 header {
 	margin: 0;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	position: sticky;
 	top: 0;
 	background-color: #111217;
@@ -21,7 +23,8 @@ footer {
 	margin: 0;
 	padding: 0.5em;
 	position: sticky;
-	top: calc(100dvh - 70px);
+	bottom: 0;
+	margin-top: auto;
 	height: 50px;
 	background-color: #111217;
 	color: #dcdde2;
@@ -102,8 +105,18 @@ table td, table th {
 	padding: 0.25em;
 }
 
+table td:nth-child(1) {
+	padding-left: 0.5em;
+}
+
+table td:nth-child(3) {
+	padding-right: 0.5em;
+}
+
 #lesson_slot {
 	font-size: 2em;
+	text-align: center;
+	width: 2.4rem;
 }
 
 #hour {

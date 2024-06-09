@@ -12,7 +12,7 @@ async function showTodayTimetable(id) {
   
 	  const timetableResponse = await fetch('../timetable.json');
 	  const timetableData = await timetableResponse.json();
-  
+	  
 	  const timetableForToday = timetableData[id][today];
 	  if (!timetableForToday) {
 		console.log('No timetable data found for today.');
@@ -37,7 +37,7 @@ async function showTodayTimetable(id) {
 	  for (const lessonSlot in lessons) {
 		const lessonId = lessons[lessonSlot].id_lesson;
 		const lessonClass = lessons[lessonSlot].class;
-		const lessonDetails = lessonsData.lessons[lessonId];
+		const lessonDetails = lessonsData.lessons[id][lessonId];
 		console.log(`${lessonSlot}: ${lessonDetails.name} (${lessonDetails.teacher})`);
 		console.log(`Class: ${lessonClass}`);
   
@@ -51,7 +51,7 @@ async function showTodayTimetable(id) {
 		// Get hour data from hours.json
 		const hoursResponse = await fetch('../hours.json');
 		const hoursData = await hoursResponse.json();
-		const hourData = hoursData.hours[lessonSlot];
+		const hourData = hoursData.hours[id][lessonSlot];
   
 		// Add hour cell
 		const hourCell = document.createElement('td');
@@ -63,8 +63,10 @@ async function showTodayTimetable(id) {
 		}
 		lessonRow.appendChild(hourCell);
   
-		if (lessonDetails) {
+		if (id == "d" && lessonDetails) {
 		  lessonRow.appendChild(document.createElement('td')).innerHTML = `${lessonDetails.name} <br><p id="classroom">${lessonClass}</p><p id="teacher">&nbsp&nbsp&nbsp${lessonDetails.teacher}</p>`;
+		} else if (lessonDetails) {
+		  lessonRow.appendChild(document.createElement('td')).innerHTML = `${lessonDetails.name} <br><p id="classroom">${lessonClass}</p>`;
 		} else {
 		  lessonRow.appendChild(document.createElement('td')).textContent = 'Okienko';
 		}
