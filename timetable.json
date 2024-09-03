@@ -36,33 +36,29 @@
         "wt.": {
             "name": "Wtorek",
             "lessons": {
-                "2": {
-                    "id_lesson": "JP",
-                    "class": "111"
-                },
                 "3": {
-                    "id_lesson": "HI",
-                    "class": "106"
+                    "id_lesson": "MA",
+                    "class": "8"
                 },
                 "4": {
-                    "id_lesson": "BI",
-                    "class": "105"
+                    "id_lesson": "MA",
+                    "class": "8"
                 },
                 "5": {
-                    "id_lesson": "IN",
-                    "class": "37"
+                    "id_lesson": "WF",
+                    "class": "25a"
                 },
                 "6": {
-                    "id_lesson": "TBD",
-                    "class": "37"
+                    "id_lesson": "JA",
+                    "class": "110"
                 },
                 "7": {
-                    "id_lesson": "TSA",
-                    "class": "37"
+                    "id_lesson": "HI",
+                    "class": "110"
                 },
                 "8": {
-                    "id_lesson": "GE",
-                    "class": "6"
+                    "id_lesson": "JN",
+                    "class": "9"
                 }       
             }
         },
