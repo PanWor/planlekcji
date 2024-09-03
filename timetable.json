@@ -4,33 +4,41 @@
             "name": "Poniedziałek",
             "lessons": {
                 "3": {
-                    "id_lesson": "JN",
-                    "class": "11"
+                    "id_lesson": "AW",
+                    "class": "110"
                 },
                 "4": {
+                    "id_lesson": "JA",
+                    "class": "110"
+                },
+                "5": {
+                    "id_lesson": "WF",
+                    "class": "26"
+                },
+                "6": {
+                    "id_lesson": "WF",
+                    "class": "26a"
+                },
+                "7": {
+                    "id_lesson": "JP",
+                    "class": "111"
+                },
+                "8": {
                     "id_lesson": "FI",
                     "class": "51"
                 },
-                "5": {
-                    "id_lesson": "JP",
-                    "class": "111"
-                },
-                "6": {
-                    "id_lesson": "JP",
-                    "class": "111"
-                },
-                "7": {
-                    "id_lesson": "MA",
-                    "class": "107"
-                },
-                "8": {
-                    "id_lesson": "CH",
-                    "class": "50"
-                },
                 "9": {
-                    "id_lesson": "TSA",
-                    "class": "42"
-                }          
+                    "id_lesson": "ADM",
+                    "class": "111"
+                },
+                "10": {
+                    "id_lesson": "JN",
+                    "class": "9"
+                },
+                "11": {
+                    "id_lesson": "TAM",
+                    "class": "50"
+                }              
             }
         },
         "wt.": {
@@ -98,37 +106,41 @@
         "czw.": {
             "name": "Czwartek",
             "lessons": {
-                "2": {
-                    "id_lesson": "JA",
-                    "class": "110"
-                },
                 "3": {
-                    "id_lesson": "PPR",
-                    "class": "37"
+                    "id_lesson": "MA",
+                    "class": "8"
                 },
                 "4": {
-                    "id_lesson": "JA",
-                    "class": "110"
+                    "id_lesson": "TSA",
+                    "class": "50"
                 },
                 "5": {
-                    "id_lesson": "WF",
-                    "class": "26"
+                    "id_lesson": "JP",
+                    "class": "111"
                 },
                 "6": {
-                    "id_lesson": "DG",
-                    "class": "42"
-                },
-                "7": {
-                    "id_lesson": "JZ",
-                    "class": "11"
-                },
-                "8": {
-                    "id_lesson": "SA",
-                    "class": "103"
-                },
-                "9": {
                     "id_lesson": "ZW",
                     "class": "106"
+                },
+                "7": {
+                    "id_lesson": "AWI",
+                    "class": "106"
+                },
+                "8": {
+                    "id_lesson": "IN",
+                    "class": "42"
+                },
+                "9": {
+                    "id_lesson": "TAD",
+                    "class": "37"
+                },
+                "10": {
+                    "id_lesson": "TAW",
+                    "class": "50"
+                },
+                "11": {
+                    "id_lesson": "PPR",
+                    "class": "7"
                 }
             }
         },
@@ -136,32 +148,28 @@
             "name": "Piątek",
             "lessons": {
                 "3": {
-                    "id_lesson": "MA",
-                    "class": "50"
-                },
-                "4": {
-                    "id_lesson": "MA",
-                    "class": "50"
-                },
-                "5": {
-                    "id_lesson": "0",
-                    "class": ""
-                },
-                "6": {
                     "id_lesson": "TBD",
                     "class": "37"
                 },
+                "4": {
+                    "id_lesson": "TAD",
+                    "class": "37"
+                },
+                "5": {
+                    "id_lesson": "MA",
+                    "class": "50"
+                },
+                "6": {
+                    "id_lesson": "GE",
+                    "class": "105"
+                },
                 "7": {
-                    "id_lesson": "PP",
-                    "class": "12"
+                    "id_lesson": "JP",
+                    "class": "111"
                 },
                 "8": {
-                    "id_lesson": "HI",
-                    "class": "106"
-                },
-                "9": {
-                    "id_lesson": "TSA",
-                    "class": "37"
+                    "id_lesson": "AW",
+                    "class": "50"
                 }
             }
         }
