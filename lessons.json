@@ -9,6 +9,10 @@
                 "name": "Aplikacje desktopowe i mobilne",
                 "teacher": "Piotr Soppa"
             },
+            "AWI": {
+                "name": "Algorytmy w informatyce",
+                "teacher": "Marek Leja"
+            },
             "BD": {
                 "name": "Bazy danych",
                 "teacher": "Marek Leja"
