@@ -65,37 +65,33 @@
         "sr.": {
             "name": "Środa",
             "lessons": {
+                "1": {
+                    "id_lesson": "TAW",
+                    "class": "37"
+                },
+                "2": {
+                    "id_lesson": "PP",
+                    "class": "12"
+                },
+                "3": {
+                    "id_lesson": "CH",
+                    "class": "101"
+                },
                 "4": {
-                    "id_lesson": "JA",
-                    "class": "110"
+                    "id_lesson": "TAM",
+                    "class": "50"
                 },
                 "5": {
                     "id_lesson": "HT",
                     "class": "109"
                 },
                 "6": {
-                    "id_lesson": "TSA",
-                    "class": "42"
+                    "id_lesson": "MA",
+                    "class": "8"
                 },
                 "7": {
-                    "id_lesson": "JN",
-                    "class": "10"
-                },
-                "8": {
-                    "id_lesson": "JZ",
-                    "class": "103"
-                },
-                "9": {
-                    "id_lesson": "BD",
-                    "class": "10"
-                },
-                "10": {
-                    "id_lesson": "WF",
-                    "class": "26"
-                },
-                "11": {
-                    "id_lesson": "WF",
-                    "class": "26"
+                    "id_lesson": "BI",
+                    "class": "7"
                 }
             }
         },
