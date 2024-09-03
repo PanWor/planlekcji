@@ -1,6 +1,14 @@
 {
     "lessons": {
         "d": {
+            "AW": {
+                "name": "Aplikacje webowe",
+                "teacher": "Piotr Soppa"
+            },
+            "ADM": {
+                "name": "Aplikacje desktopowe i mobilne",
+                "teacher": "Piotr Soppa"
+            },
             "BD": {
                 "name": "Bazy danych",
                 "teacher": "Marek Leja"
@@ -67,6 +75,18 @@
             },
             "SA": {
                 "name": "Strony i aplikacje internetowe",
+                "teacher": "Piotr Soppa"
+            },
+            "TAD": {
+                "name": "Tworzenie aplikacji desktopowych",
+                "teacher": "Marek Leja"
+            },
+            "TAM": {
+                "name": "Tworzenie aplikacji mobilnych",
+                "teacher": "Piotr Soppa"
+            },
+            "TAW": {
+                "name": "Tworzenie aplikacji webowych",
                 "teacher": "Piotr Soppa"
             },
             "TBD": {
