@@ -1,8 +1,7 @@
-async function showTodayTimetable(id) {
+async function showTodayTimetable(id, day = new Date().toLocaleDateString('pl-PL', { weekday: 'short' }).toLowerCase()) {
 	var notToday = false;
-	var today = new Date().toLocaleDateString('pl-PL', { weekday: 'short' }).toLowerCase(); // Get today's weekday in Polish (short format)
-	if (today === 'sob.' || today === 'niedz.') {
-	  today = 'pon.';
+	if (day === 'sob.' || day === 'niedz.') {
+	  day = 'pon.';
 	  notToday = true;
 	}
   
@@ -13,9 +12,9 @@ async function showTodayTimetable(id) {
 	  const timetableResponse = await fetch('../timetable.json');
 	  const timetableData = await timetableResponse.json();
 	  
-	  const timetableForToday = timetableData[id][today];
-	  if (!timetableForToday) {
-		console.log('No timetable data found for today.');
+	  const timetableForSelDay = timetableData[id][day];
+	  if (!timetableForSelDay) {
+		console.log(`No timetable data found for selected day. ${day}`);
 		return;
 	  }
   
@@ -25,12 +24,12 @@ async function showTodayTimetable(id) {
 	  timetableElement.innerHTML = '';
   
 	  if (notToday) {
-		console.log(`\nTimetable for next Monday (${timetableForToday.name}):\n`);
+		console.log(`\nTimetable for next Monday (${timetableForSelDay.name}):\n`);
 	  } else {
-		console.log(`\nToday's timetable (${timetableForToday.name}):\n`);
+		console.log(`\nToday's timetable (${timetableForSelDay.name}):\n`);
 	  }
   
-	  const lessons = timetableForToday.lessons;
+	  const lessons = timetableForSelDay.lessons;
   
 	  // Create table header row
 	 
@@ -77,4 +76,29 @@ async function showTodayTimetable(id) {
 	  console.error('Error fetching timetable data:', error);
 	}
   }
+
+  function getPreviousDay(day) {
+	const daysOfSchoolWeek = ['pon.', 'wt.', 'śr.', 'czw.', 'pt.'];
+
+	const dayIndex = daysOfSchoolWeek.indexOf(day);
+	const previousDayIndex = (dayIndex - 1 + daysOfSchoolWeek.length) % daysOfSchoolWeek.length;
+	const previousDay = daysOfSchoolWeek[previousDayIndex];
+	
+	window.selectedDay = previousDay;
+	return previousDay;
+  }
+
+  function getNextDay(day) {
+	const daysOfSchoolWeek = ['pon.', 'wt.', 'śr.', 'czw.', 'pt.'];
+
+	const dayIndex = daysOfSchoolWeek.indexOf(day);
+	const nextDayIndex = (dayIndex + 1) % daysOfSchoolWeek.length;
+	const nextDay = daysOfSchoolWeek[nextDayIndex];
+	
+	window.selectedDay = nextDay;
+	return nextDay;
+  }
   
+  function updateTodayDay() {
+	document.getElementById("today-day").innerHTML = window.selectedDay;
+  }

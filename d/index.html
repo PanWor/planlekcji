@@ -36,6 +36,7 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 	
 
 	<!-- Javscript -->
@@ -55,9 +56,26 @@
 	</header>
 	<main>
 		<script src="../script.js"></script>
-		<script >showTodayTimetable("d");</script>
+		<script>showTodayTimetable("d");</script>
+		<script>window.selectedDay = new Date().toLocaleDateString('pl-PL', { weekday: 'short' }).toLowerCase();</script>
 		<table border=1 frame=void rules=rows class="timetable" id="d"></table>
 	</main>
+	<div class="day-select">
+		<a onclick="showTodayTimetable('d', getPreviousDay(selectedDay)); updateTodayDay();" href="#" class="day-select-prev">
+			<span class="material-symbols-outlined">
+			arrow_back_ios
+			</span>
+		</a>
+		<span id="today-day"></span>
+		<a onclick="showTodayTimetable('d', getNextDay(selectedDay)); updateTodayDay();" href="#" class="day-select-next">
+			<span class="material-symbols-outlined">
+			arrow_forward_ios
+			</span>
+		</a>
+	</div>
+	<script>
+		document.getElementById("today-day").innerHTML = new Date().toLocaleString("pl", {weekday: "long"});
+	</script>
 	<footer>
 		<div onclick="document.location.href='../d/index.html'" class="subpage" id="selected">
 			<p class="subpage-icon">D</p>

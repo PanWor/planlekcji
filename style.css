@@ -24,12 +24,39 @@ footer {
 	padding: 0.5em;
 	position: sticky;
 	bottom: 0;
-	margin-top: auto;
 	height: 50px;
 	background-color: #111217;
 	color: #dcdde2;
 	display: flex;
 	justify-content: space-around;
+}
+
+.day-select {
+	margin: 0;
+	padding: 0.6em;
+	position: sticky;
+	bottom: calc(50px + 1em);
+	margin-top: auto;
+	height: 20px;
+	background-color: #111217;
+	color: #dcdde2;
+	display: flex;
+	justify-content: space-around;
+}
+
+.day-select>a {
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	color: #dcdde2;
+}
+
+.day-select>a:hover, .day-select>a:active {
+	color: #81848a;
+}
+
+.day-select>a {
+	margin: 0 -5em;
 }
 
 .subpage {
